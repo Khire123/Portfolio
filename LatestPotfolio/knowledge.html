@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge - Kaustubh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 90px;
+      background-color: #333333;
+      padding: 0 50px;
+    }
+
+    .left {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #2ecc71;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #2ecc71;
+      font-weight: 600;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #2ecc71;
+      text-align: center;
+    }
+
+    .languages-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .language-item {
+      text-align: center;
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .language-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .language-item img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+      object-fit: contain;
+      filter: brightness(0.9);
+    }
+
+    .language-item p {
+      font-size: 1rem;
+      color: #e0e0e0;
+    }
+
+    footer {
+      background-color: #333333;
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Portfolio</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="knowledge.html">Knowledge</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Languages & Technologies I Know</h1>
+    <div class="languages-container">
+      <div class="language-item">
+        <img src="html.png" alt="HTML" />
+        <p><strong>HTML</strong></p>
+      </div>
+      <div class="language-item">
+        <img src="css.png" alt="CSS" />
+        <p><strong>CSS</strong></p>
+      </div>
+      <div class="language-item">
+        <img src="javascript.png" alt="JavaScript" />
+        <p><strong>JavaScript</strong></p>
+      </div>
+      <div class="language-item">
+        <img src="c.png" alt="C" />
+        <p><strong>C</strong></p>
+      </div>
+      <div class="language-item">
+        <img src="c++.png" alt="C++" />
+        <p><strong>C++</strong></p>
+      </div>
+      <div class="language-item">
+        <img src="java.png" alt="Java" />
+        <p><strong>Java</strong></p>
+      </div>
+      <div class="language-item">
+        <img src="python.png" alt="Python" />
+        <p><strong>Python</strong></p>
+      </div>
+      <div class="language-item">
+        <img src="sql.png" alt="SQL" />
+        <p><strong>SQL</strong></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Kaustubh | Designed with 💻.
+  </footer>
+</body>
+</html>

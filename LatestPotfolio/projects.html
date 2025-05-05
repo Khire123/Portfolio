@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Kaustubh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #0a0a0a; /* black */
+      color: #e0e0e0; /* light gray text */
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      background-color: #1a1a1a; /* dark gray */
+      padding: 0 50px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #e0e0e0;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00ff88; /* green */
+    }
+
+    .projects {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .project-card {
+      background-color: #1f1f1f; /* dark grayish background */
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0, 255, 136, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 10px;
+      border: 2px solid #00ff88; /* green border */
+    }
+
+    .project-card h3 {
+      margin-top: 15px;
+      color: #00ff88; /* green */
+    }
+
+    .project-card p {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left" style="color:#00ff88; font-weight: 600; font-size: 1.5rem;">Portfolio</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="knowledge.html">Knowledge</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="projects">
+    <div class="project-card">
+      <img src="project1.png" alt="Project 1" />
+      <h3>Portfolio Website</h3>
+      <p>Created a responsive personal website to showcase my skills, projects, and contact info. It features a modern design optimized for all devices.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="project2.png" alt="Project 2" />
+      <h3>SynTwin</h3>
+      <p>Developed a smart vehicle system with sensors, Supabase cloud, and a 3D twin using Three.js and React, with autonomous navigation capabilities.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="project3.png" alt="Project 3" />
+      <h3>Driver Drowsiness Detection</h3>
+      <p>Built a safety system using Raspberry Pi and sensors to detect driver drowsiness and alert via buzzer, LED, and LCD display.</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Kaustubh | Designed with 💻.
+  </footer>
+</body>
+</html>
